@@ -8,9 +8,11 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "dbSetup": "node ./server/database/db.js"
+    "dbSetup": "node ./server/database/db.js",
+    "compile": "webpack -d --watch"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "pg": "^8.2.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.13"
@@ -21,6 +23,7 @@
     "babel-loader": "^8.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "faker": "^4.1.0",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   }
 }
