@@ -9,7 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        App loaded.
+        <h1>First App</h1>
+        App - loaded.
 
       </div>
     );
