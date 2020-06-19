@@ -9,7 +9,6 @@ const sequelize = new Sequelize('mydb', 'noobdev', 'post', {
 
 
 var biz = sequelize.define('business', {
-  // "_id" : Sequelize.INTEGER,
   "bizID" : Sequelize.TEXT,
   "name" : Sequelize.TEXT,
   "address" : Sequelize.TEXT,
@@ -29,8 +28,6 @@ let seedDB = (size = 100) => {
   let res = [];
 
   for ( let i=0; i<size; i++) {
-    let t1 = faker.random.number()%12 + 1;
-    let t2 = faker.random.number()%12 + 1;
     res.push(
       {
         bizID : i+1,
