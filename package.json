@@ -8,10 +8,19 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "dbSetup": "node ./server/database/db.js"
   },
   "dependencies": {
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.13"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "faker": "^4.1.0",
+    "webpack": "^4.43.0"
   }
 }
