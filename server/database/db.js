@@ -9,7 +9,7 @@ const sequelize = new Sequelize('mydb', 'noobdev', 'post', {
 
 
 var biz = sequelize.define('business', {
-  "biz_iD" : Sequelize.TEXT,
+  "biz_id" : Sequelize.TEXT,
   "name" : Sequelize.TEXT,
   "address" : Sequelize.TEXT,
   "city" : Sequelize.TEXT,
@@ -30,7 +30,7 @@ let seedDB = (size = 100) => {
   for ( let i=0; i<size; i++) {
     res.push(
       {
-        biz_iD : i+1,
+        biz_id : i+1,
         name : faker.company.companyName(),
         address : faker.address.streetAddress(),
         city : faker.address.city(),
