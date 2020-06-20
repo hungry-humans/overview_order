@@ -6,13 +6,13 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
   },
-  module : {
+  module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-react', '@babel/preset-env']
           }
@@ -20,7 +20,7 @@ module.exports = {
       }
     ]
   },
-  watchOptions:{
-    poll:true
+  watchOptions: {
+    poll: true
   }
 };

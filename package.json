@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dbSetup": "node ./server/database/db.js",
-    "compile": "webpack -d --watch"
+    "react-dev": "webpack -d --watch",
+    "server-dev": "node ./server/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
+    "eslint": "^7.3.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "faker": "^4.1.0",
     "webpack": "^4.43.0",
