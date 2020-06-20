@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 
 //db for business
-const bizdb = require('./database/db_biz');
+const bizdb = require('../database/db_biz');
 
 
 app.use(cors());
@@ -23,6 +23,7 @@ app.param('biz_id', (req, res, next, id) => {
 //API business info - for overview
 app.get('/search/:biz_id', (req, res) => {
   bizdb.sync()
+    // eslint-disable-next-line camelcase
     .then(()=> bizdb.findOne({where:{biz_id: req.params.biz_id}}))
     .then((business) => res.status(200).json(business))
     .finally(() => res.end() );
