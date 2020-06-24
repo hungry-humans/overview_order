@@ -5,7 +5,7 @@
   <body>
 
 
-    <div id='overview' class='info_container'>
+    <div id='overview' class='info_container margin_bottom_24px'>
       <div id='bizTitle' >
         <h1 class='title_text'> Brown Sugar Kitchen </h1>
         <span>
@@ -62,8 +62,15 @@
         </a>
       </div>
 
-      <div class="last_update_biz">
-
+      <div class="last_update_biz flex_box">
+        <div class="flex_content">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon_svg"><path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1zm0 2a5 5 0 1 0 0 10A5 5 0 0 0 8 3zm0 3.86a1 1 0 0 1 1 1v3a1 1 0 0 1-2 0v-3a1 1 0 0 1 1-1zm0-2.74a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+        </div>
+        <div class="flex_content">
+          <p class="p_flat">
+            Hours updated "2 weeks" ago</2>
+          </p>
+        </div>
       </div>
 
 
@@ -307,5 +314,65 @@ span.service_type{
   box-shadow: none;
   transition: all .3s ease;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+
+
+
+
+
+.flex_box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex_content{
+  display: inline-flex;
+  color: inherit;
+  fill: inherit;
+}
+
+.last_update_biz{
+  margin-top: 4px!important;
+  color: #0ab3c9;
+  fill: #0ab3c9;
+}
+
+
+.p_flat {
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.margin_bottom_24px {
+  margin-bottom: 24 !important;
+}
+
+.icon_svg{
+  fill: inherit;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text_align_left{
+  text-align: left;
+}
+
+.text_color_inherit{
+  color:inherit;
+}
+
+.text_400{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+.text_size_400{
+  font-size: 16px;
+  line-height: 22px;
 }
 </style>
