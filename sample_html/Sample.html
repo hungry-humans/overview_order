@@ -16,9 +16,7 @@
 
       <div class='info_rating'>
         <div class='review_stars'>
-          <span>
-            <div class='review_stars_img'> </div>
-          </span>
+          <div class='review_stars_img'> </div>
           <!-- <span >
             <img class='review_stars' width = '132' heigth='40' src='./image set/35_rate.png' />
           </span> -->
@@ -39,8 +37,37 @@
             </button>
           </div>
         </div>
+      </div>
+
+
+      <div class = 'service_types'>
+        <span class = 'service_type'>
+          <a class='biz_service'>
+            Italian
+          </a>,
+        </span>
+        <span class = 'service_type'>
+          <a class='biz_service'>
+            Salad
+          </a>,
+        </span>
+        <span class = 'service_type'>
+          <a class='biz_service'>
+            Burger
+          </a>
+        </span>
+
+        <a href='/' class='biz_service edit' target name rel>
+          Edit
+        </a>
+      </div>
+
+      <div class="last_update_biz">
 
       </div>
+
+
+
     </div>
 
     <div id='app'>
@@ -59,16 +86,15 @@
 
 
 <style>
+
+
+/* Overview - Biz title */
+
 .info_container {
   max-width: 1144px;
   padding: 0 40px;
   margin: 0 auto;
 }
-
-/* .title_div {
-  margin-left: -32px;
-
-} */
 
 h1.title_text {
   color:blue;
@@ -96,10 +122,16 @@ div {
   margin-right:6px;
 }
 
+
+/* Info Rating */
+
 div.info_rating {
-  display: table;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
   min-width: 100%;
-  table-layout: auto;
 
   margin-left: -12px;
   margin-right: -12px;
@@ -107,33 +139,34 @@ div.info_rating {
   border-spacing: 12px 0;
 
   margin-bottom: 8px!important;
-  width: fit-content;
-}
 
+  height: 32px;
+}
+/*
 span {
   display: inline;
-}
+} */
+
+
+
+/* Overview - Rating */
 
 div.review_stars{
   box-sizing: border-box;
-  display: table-cell;
+  display: inline-flex;
   border-collapse: collapse;
-    border-spacing: 0;
-    vertical-align: middle;
-    width: 176px;
-    height: 32px;
+  border-spacing: 0;
 }
 
 div.review_stars_img{
-    width: 176px;
-    height: 32px;
-    background-position: 0 -160px;
-    /* I believe -160 for 3.5 star, -192 for 4 star */
-    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png);
-    background-size: 176px 680px;
-    display: inline-block;
-    vertical-align: middle;
-    overflow: hidden;
+  width: 176px !important;
+  height: 32px;
+  background-position: 0 -160px;
+  /* I believe -160 for 3.5 star, -192 for 4 star */
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png);
+  background-size: 176px 680px;
+  display: inline-block;
+  overflow: hidden;
 }
 /*
 .review_stars {
@@ -155,45 +188,28 @@ div.review_stars_img{
 span.review_stars {
   display:inline;
 }
-/*
-img.review_stars {
-  clip-path: inset(30% 0 20% 0);
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-} */
 
-/* div.review_counter {
-  display: inline-block;
-} */
+
 div.review_counter.cell {
-  vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 
   box-sizing: border-box;
-  display: table-cell;
+  display: inline-flex;
   white-space: nowrap;
   width:fit-content;
 }
 
 
 p.review_counter {
-  display:inline-block;
   text-align: left;
   font-size: 16px;
   line-height: 22px;
   font-family: Open Sans, Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 400;
-  vertical-align: middle;
   white-space: nowrap;
   color: #757280;
 }
-
-
 
 div.review_detail {
 
@@ -247,21 +263,49 @@ div.review_detail_button {
 }
 
 
-span {
-  max-width: 100%;
-  overflow: hidden!important;
-  text-overflow: ellipsis!important;
-  white-space: nowrap!important;
 
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    font-weight: 600;
+span{
+  display: inline-block;
 }
+
 
 p{
   text-align: left;
 }
 
+
+
+
+
+
+/* Overview-Biz Type */
+
+
+span.service_type{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+
+.biz_service{
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.biz_service.edit {
+  padding: 0 6px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #757280;
+  background: transparent;
+  box-shadow: none;
+  transition: all .3s ease;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 </style>
