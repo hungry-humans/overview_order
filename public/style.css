@@ -350,7 +350,7 @@ div.overview_ui_button {
 
 .overview_write_review{
   color: #fff;
-  background: #f43939;
+  background: #f43939 !important;
   border: 1px solid #f43939;
   background-image: none;
   background-repeat: no-repeat;
@@ -385,3 +385,6 @@ div.overview_ui_button {
 
 }
 
+.overview_a_button:hover {
+  background-color: #c9c9c9;;
+}

@@ -10,7 +10,7 @@ class OverviewUIbuttons extends React.Component {
     return (
       <div id="overview_ui" class='flex_box'>
         <div class="flex_content">
-          <a class="overview_a_button overview_write_review">
+          <a class="overview_a_button overview_write_review ">
             <div class="overview_ui_button">
               <span class="overview_ui_span text_600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="icon_svg"><path d="M8.94 1l2.373 5.387 5.187.758-3.75 3.67.928 5.077-4.737-2.907L4.367 16l.885-5.186-3.75-3.67 5.187-.757L8.94 1z"></path></svg>
