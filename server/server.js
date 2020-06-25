@@ -20,6 +20,15 @@ app.param('biz_id', (req, res, next, id) => {
   next();
 });
 
+// app.get('/:biz_id'){
+//   bizdb.sync()
+//     // eslint-disable-next-line camelcase
+//     .then(()=> bizdb.findOne({where:{biz_id: req.params.biz_id}}))
+//     .then((business) => res.status(200).json(business).redirect)
+//     .finally(() => res.end() );
+// }
+
+
 //API business info - for overview
 app.get('/search/:biz_id', (req, res) => {
   bizdb.sync()
@@ -30,5 +39,6 @@ app.get('/search/:biz_id', (req, res) => {
 });
 
 
-const port = 3000;
+
+const port = 3001;
 app.listen(port, () => console.log(`http://localhost:${port} up and running`));

@@ -1,0 +1,387 @@
+
+.info_container {
+  max-width: 1144px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+h1.title_text {
+  /* color:blue; */
+  display: inline;
+  font-size: 40px;
+  line-height: 54px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+
+span.icon_claimed {
+  fill: #0073bb;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+span.info_claimed {
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  line-height: 20px;
+}
+
+
+
+div {
+
+  margin-left:6px;
+  margin-right:6px;
+}
+
+
+/* Info Rating */
+
+div.info_rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  min-width: 100%;
+
+  margin-left: -12px;
+  margin-right: -12px;
+  border-collapse: separate;
+  border-spacing: 12px 0;
+
+  margin-bottom: 8px!important;
+
+  height: 32px;
+}
+/*
+span {
+  display: inline;
+} */
+
+
+
+/* Overview - Rating */
+
+div.review_stars{
+  box-sizing: border-box;
+  display: inline-flex;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div.review_stars_img{
+  width: 176px !important;
+  height: 32px;
+  background-position: 0 -160px;
+  /* I believe -160 for 3.5 star, -192 for 4 star */
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png);
+  background-size: 176px 680px;
+  display: inline-block;
+  overflow: hidden;
+}
+/*
+.review_stars {
+  width: 176px;
+  height: 32px;
+  height: 680px;
+  background-position: 0 -256px;
+  background: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png) no-repeat;
+  background-size: 176px 680px;
+  display: inline-block;
+  vertical-align: middle;
+
+
+
+  clip-path: inset(24% 0 72% 0);
+  position: absolute;
+} */
+
+span.review_stars {
+  display:inline;
+}
+
+
+div.review_counter.cell {
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  box-sizing: border-box;
+  display: inline-flex;
+  white-space: nowrap;
+  width:fit-content;
+}
+
+
+p.review_counter {
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Open Sans, Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  color: #757280;
+}
+
+div.review_detail {
+
+  box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div.review_detail_button {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.tertiary {
+  color: #2b273c;
+    background: #eeeeef;
+    border: 1px solid #eeeeef;
+    background-image: none;
+    background-repeat: no-repeat;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    -webkit-transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+    transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+    background-position: calc(var(--mousedown-x) - calc(var(--button-width, 100px) * 200)/2) calc(var(--mousedown-y) - calc(var(--button-width, 100px) * 200)/2);
+    background-size: calc(var(--button-width, 100px) * 200) calc(var(--button-width, 100px) * 200);
+}
+
+.small {
+  padding: 0 8px;
+    height: 24px;
+}
+
+.tertiary.button {
+  display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+
+    border-radius: 4px;
+
+
+    /* --mousedown-x: 25px;
+    --mousedown-y: 20.1719px;
+    --button-width: 57.9375px; */
+}
+
+
+
+span{
+  display: inline-flex;
+  align-items : center;
+  justify-content: center;
+  /* vertical-align: middle; */
+  height: inherit;
+}
+
+.span_center{
+
+  display: inline-flex;
+  align-items : center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+
+p{
+  text-align: left;
+}
+
+
+
+
+
+
+/* Overview-Biz Type */
+
+
+span.service_type{
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+
+
+.biz_service{
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.biz_service.edit {
+  padding: 0 6px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #757280;
+  background: transparent;
+  box-shadow: none;
+  transition: all .3s ease;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+
+
+
+
+
+.flex_box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex_content{
+  display: inline-flex;
+  color: inherit;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.last_update_biz{
+  margin-top: 4px!important;
+  color: #0ab3c9;
+  fill: #0ab3c9;
+}
+
+
+.p_flat {
+  margin-top: inherit;
+  margin-bottom: inherit;
+}
+
+.margin_bottom_24px {
+  margin-bottom: 24 !important;
+}
+
+.icon_svg{
+  fill: inherit;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text_align_left{
+  text-align: left;
+}
+
+.text_color_inherit{
+  color:inherit;
+}
+
+.text_400{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+.text_size_400{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+
+.text_600{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: height;
+}
+
+.text_size_600{
+  font-size: 16px;
+  line-height: 22px;
+
+}
+
+div.overview_ui_button {
+  height: 40px;
+}
+
+.overview_a_button{
+  border-color: #eeeeef;
+  text-decoration: none!important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 16px;
+  height: 40px;
+  /* height:auto; */
+  border-radius: 4px;
+  vertical-align: middle;
+
+  color: #2b273c;
+  background: transparent;
+  border: 1px solid #bbbac0;
+  background-image: none;
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+  transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+  background-position: calc(var(--mousedown-x) - calc(var(--button-width, 100px) * 200)/2) calc(var(--mousedown-y) - calc(var(--button-width, 100px) * 200)/2);
+  background-size: calc(var(--button-width, 100px) * 200) calc(var(--button-width, 100px) * 200);
+}
+
+
+.overview_write_review{
+  color: #fff;
+  background: #f43939;
+  border: 1px solid #f43939;
+  background-image: none;
+  background-repeat: no-repeat;
+  transition: all .8s;
+  transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+  background-position: calc(var(--mousedown-x) - calc(var(--button-width, 100px) * 200)/2) calc(var(--mousedown-y) - calc(var(--button-width, 100px) * 200)/2);
+  background-size: calc(var(--button-width, 100px) * 200) calc(var(--button-width, 100px) * 200);
+  border-color: #eeeeef;
+}
+
+.overview_ui_span{
+  max-width: 100%;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  white-space: nowrap!important;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color:inherit;
+  fill: currentColor;
+}
+
+.overview_div_uiitem{
+  display: block;
+   text-align: center;
+   background: #383838;
+}
+
+
+.overview_add_photo{
+
+}
+
