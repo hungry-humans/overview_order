@@ -66,6 +66,18 @@ class UIShareButton extends React.Component {
                   Share on Twitter
                 </button>
               </div>
+
+              <div className='flex_box full extra-margin border'>
+                <div className='flex_content '>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon_svg"><path d="M5.82 1a1 1 0 0 1 0 2H3v10h10v-2.88a1 1 0 0 1 2 0V14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h3.82zm8.68 0a.5.5 0 0 1 .5.47v4a.5.5 0 0 1-.31.53.63.63 0 0 1-.19 0 .5.5 0 0 1-.35-.12l-1.27-1.27L9.49 8a1.018 1.018 0 0 1-1.41-1.47l3.36-3.38-1.3-1.3a.51.51 0 0 1-.11-.54.5.5 0 0 1 .47-.31z"></path></svg>
+                </div>
+                <div className='flex_content full'>
+                  <input className='share-deco clean text_400 ' placeholder ='www.hungryhumans.com/biz/1'/>
+                </div>
+
+              </div>
+
+
               <div className='flex_content full'>
                 <fieldset className='share-deco'>
                   <legend className='share-deco'>

@@ -253,6 +253,11 @@ span.service_type{
   width: 100%;
 }
 
+.flex_box.full{
+  width: 100%;
+}
+
+
 .flex_box .stack{
   display: flex;
   flex-direction: column;
@@ -549,6 +554,7 @@ textarea.clean {
 
 textarea.share-deco {
   width: 100%;
+  border-width: 1px
 }
 
 textarea.oneline {
@@ -649,10 +655,24 @@ span.share-deco {
 
 input.share-deco {
   width:100%;
+  border-width: 1px;
+  height: 30px;
 }
 
+
+input.clean {
+  border: none;
+}
 
 div.extra-margin{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.border {
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
 }
