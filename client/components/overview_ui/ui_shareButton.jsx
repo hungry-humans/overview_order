@@ -99,6 +99,10 @@ class UIShareButton extends React.Component {
               <div className='flex_content full extra-margin'>
                 <textarea className='textarea-simple share-deco text_400' />
               </div>
+
+              <button className="overview_write_review reivew-post-button text_600">
+                Share
+              </button>
             </div>
 
           </div>
