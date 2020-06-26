@@ -249,6 +249,10 @@ span.service_type{
   align-items: center;
 }
 
+.flex_content.full{
+  width: 100%;
+}
+
 .flex_box .stack{
   display: flex;
   flex-direction: column;
@@ -316,7 +320,12 @@ span.service_type{
 
 
 
-
+.text_700{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: height;
+}
 
 
 .text_600{
@@ -439,17 +448,23 @@ div.overview_ui_button {
   justify-content: space-between;
   align-items: center;
   border-radius: inherit;
-  border-bottom: 1px solid black;
-  margin: 0;
+  margin: 15px;
 
-  background-color: #d32323;
+  background-color: white;
+  color: black;
 }
+
+
+.modal-header.yelp {
+  background-color: #d32323 !important;
+  color: white;
+}
+
 
 .modal-header .title{
   margin-left: 10px;
   font-size: 1.35 rem;
   font-weight: bold;
-  color: white;
 
 }
 
@@ -461,8 +476,7 @@ div.overview_ui_button {
   background: none;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
-
+  color:inherit;
 }
 
 .modal-body {
@@ -505,6 +519,10 @@ div.overview_ui_button {
   color: gray;
 }
 
+.review-status-autosave{
+  opacity: 0;
+}
+
 .review-content {
   border: 1px solid gray;
   border-radius: 5px;
@@ -545,11 +563,51 @@ div.overview_ui_button {
   margin-bottom: 20px 10px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-
+.review-content-photo:hover{
+  box-shadow: 0 0 5px gray;
+}
 
 .reivew-post-button{
   margin: 10px 20px;
   width: 240px;
   height: 48px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.reivew-post-button:hover{
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+.share-button {
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  border: none;
+  background-image: none;
+  text-overflow: ellipsis!important;
+  white-space: nowrap;
+  margin: 5px;
+  border-radius: 5px;
+  height: 40px;
+  justify-content: center;
+}
+
+.share-button.facebook-style {
+  background: #1877f2;
+}
+
+.share-button.twitter-style {
+  background: #50abf1;
 }

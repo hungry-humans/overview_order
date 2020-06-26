@@ -6,16 +6,31 @@ class UIReviewButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: 'active'
+      showWriteReview: '',
+      showOverlay: ''
     };
   }
 
   reviewClicked () {
-    this.setState({show: 'active '});
+    this.setState({
+      showWriteReview: 'active ',
+      showOverlay: 'active'
+    });
   }
 
   closeBtnClicked () {
-    this.setState({show: ''});
+    this.setState({
+      showWriteReview: '',
+      showOverlay: ''
+    });
+  }
+
+  clickEvent (type) {
+    if (type === 'guideline') {
+      this.setState({
+        showGuide: 'active'
+      });
+    }
   }
 
 
@@ -27,22 +42,18 @@ class UIReviewButton extends React.Component {
       <>
         <div className="flex_content">
           <button className="overview_a_button overview_write_review text_600 " onClick={e => this.reviewClicked()}>
-            {/* <div className="overview_ui_button "> */}
-            {/* <span className="overview_ui_span text_600"> */}
             <span>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" className="icon_svg"><path d="M8.94 1l2.373 5.387 5.187.758-3.75 3.67.928 5.077-4.737 -2.907L4.367 16l.885-5.186-3.75-3.67 5.187-.757L8.94 1z"></path></svg>
                 Write Review
             </span>
-            {/* </span> */}
-            {/* </div> */}
           </button>
         </div>
 
-        {/* Modal */}
+        {/* Modal for making a review */}
 
-        <div className={ 'modal ' + this.state.show }>
-          <div className="modal-header">
-            <div className="title text_600">
+        <div className={ 'modal ' + this.state.showWriteReview }>
+          <div className="modal-header yelp">
+            <div className="title text_700">
               Write a Review
             </div>
             <button className="close-button" onClick={e => this.closeBtnClicked()}> &times; </button>
@@ -52,7 +63,7 @@ class UIReviewButton extends React.Component {
             <div className='flex_box stack'>
               <div className="flex_content review-header">
                 <div className='review-title text_600'> {this.props.bizInfo.name} </div>
-                <div> Read our review guidelines</div>
+                <div onClick={e=>this.clickEvent('guideline')}> Read our review guidelines</div>
               </div>
 
               <div className='flex_box stack review-content'>
@@ -60,7 +71,7 @@ class UIReviewButton extends React.Component {
                   <div id="Review Star Selector" >
                     [Review Star Selector] Select your rating
                   </div>
-                  <div> All changes saved </div>
+                  <div className='review-status-autosave'> All changes saved </div>
                 </div>
                 <textarea className='review-textarea text_400' placeholder={textareaPlaceholder}>
 
@@ -96,7 +107,13 @@ class UIReviewButton extends React.Component {
           </div>
         </div>
 
-        <div id="overlay" className={this.state.show}></div>
+        {/*
+        <div className={'modal ' + this.state.show }>
+
+        </div> */}
+
+
+        <div id="overlay" className={this.state.showOverlay}></div>
       </>
     );
   }
