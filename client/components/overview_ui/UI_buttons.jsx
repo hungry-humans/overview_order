@@ -1,6 +1,7 @@
 const React = require('react');
-const UIReviewButton = require('./ui_reivewButton.jsx');//
+const UIReviewButton = require('./ui_reivewButton.jsx');
 // import UIReviewButton from './ui_reivewButton.jsx';//client\components\overview_ui\ui_reivewButton.jsx
+const UIShareButton = require('./ui_shareButton.jsx');
 class OverviewUIbuttons extends React.Component {
   constructor(props) {
     super(props);
@@ -24,15 +25,7 @@ class OverviewUIbuttons extends React.Component {
         </div>
 
 
-        <div className="flex_content">
-          <button className="overview_a_button">
-            <span className="overview_ui_span text_600">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" className="icon_svg"><path d="M17.714 6.43L13 10.356v-3.03c-1 0-5.097 1.47-6.286 3.62.274-3.08 4.286-5.5 6.286-5.5V2.5l4.714 3.93zM3 4v10h11v-2.5l1-1V15H2V3h8.5l-1 1H3z"></path></svg>
-              Share
-            </span>
-
-          </button>
-        </div>
+        <UIShareButton />
 
         <div className="flex_content">
           <button className="overview_a_button">
