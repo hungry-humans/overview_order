@@ -11,23 +11,23 @@ class OverviewServices extends React.Component {
   render() {
     const categories = this.props.bizServices;
     return (
-      <div class = 'service_types'>
+      <div className= 'service_types'>
         { categories ?
           categories.map((item, index) => (
-            <span class = 'service_type'>
-              <a class='biz_service'>
+            <span className= 'service_type'>
+              <a className='biz_service'>
                 {item}
               </a>
               { index < categories.length - 1 ? ',' : '' }
             </span>
           ))
           :
-          <span class = 'service_type'>
+          <span className = 'service_type'>
             None
           </span>
         }
 
-        <a href='/' class='biz_service edit' target name rel>
+        <a href='/' className='biz_service edit'>
           Edit
         </a>
       </div>

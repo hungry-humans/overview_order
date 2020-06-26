@@ -22,18 +22,18 @@ class OverviewReview extends React.Component {
 
   render() {
     return (
-      <div class='info_rating'>
-        <div class='review_stars'>
-          <div class='review_stars_img' style={ {backgroundPosition: `0 ${this.state.pos}`} }> </div>
+      <div className='info_rating'>
+        <div className='review_stars'>
+          <div className='review_stars_img' style={ {backgroundPosition: `0 ${this.state.pos}`} }> </div>
         </div>
 
-        <div class='review_counter cell'>
-          <p class = 'review_counter'> {this.props.bizReviewCount} reviews </p>
+        <div className='review_counter cell'>
+          <p className= 'review_counter'> {this.props.bizReviewCount} reviews </p>
         </div>
 
-        <div class='review_detail'>
-          <div class='review_detail_button'>
-            <button class='tertiary small button'  type='submit' value='submit' >
+        <div className='review_detail'>
+          <div className='review_detail_button'>
+            <button className='tertiary small button'  type='submit' value='submit' >
               <span>
                 Details
               </span>
