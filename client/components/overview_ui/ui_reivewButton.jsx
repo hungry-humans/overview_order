@@ -73,7 +73,8 @@ class UIReviewButton extends React.Component {
                   </div>
                   <div className='review-status-autosave'> All changes saved </div>
                 </div>
-                <textarea className='review-textarea text_400' placeholder={textareaPlaceholder}>
+                <textarea className='textarea-simple clean text_400' placeholder={textareaPlaceholder}>
+
                 </textarea>
 
               </div>

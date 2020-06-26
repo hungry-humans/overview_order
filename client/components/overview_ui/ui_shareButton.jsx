@@ -66,9 +66,27 @@ class UIShareButton extends React.Component {
                   Share on Twitter
                 </button>
               </div>
-              <div> --- OR --- </div>
-              <div> To </div>
-              <div> Add Note </div>
+              <div className='flex_content full'>
+                <fieldset className='share-deco'>
+                  <legend className='share-deco'>
+                    <span className='share-deco text_400'> OR </span>
+                  </legend>
+                </fieldset>
+
+              </div>
+              <div className='flex_content full'>
+                <span className='text_600 '> To </span> <div>Yelper names or email addresses</div>
+              </div>
+              <div className='flex_content full extra-margin'>
+                <input className='share-deco text_400 ' />
+              </div>
+
+              <div className='flex_content full'>
+                <span className='text_600 '> Add a note </span> <div>Optional</div>
+              </div>
+              <div className='flex_content full extra-margin'>
+                <textarea className='textarea-simple share-deco text_400' />
+              </div>
             </div>
 
           </div>

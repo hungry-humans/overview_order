@@ -533,10 +533,9 @@ div.overview_ui_button {
 }
 
 
-.review-textarea {
+.textarea-simple {
   /* height: 400px; */
   width: 90%;
-  border: none;
   height: 150px;
   outline: none;
   resize: none;
@@ -544,6 +543,17 @@ div.overview_ui_button {
   box-sizing: border-box
 }
 
+textarea.clean {
+  border: none;
+}
+
+textarea.share-deco {
+  width: 100%;
+}
+
+textarea.oneline {
+
+}
 
 
 .review-header-photo{
@@ -602,6 +612,7 @@ div.overview_ui_button {
   border-radius: 5px;
   height: 40px;
   justify-content: center;
+  align-items : center;
 }
 
 .share-button.facebook-style {
@@ -610,4 +621,38 @@ div.overview_ui_button {
 
 .share-button.twitter-style {
   background: #50abf1;
+}
+
+
+fieldset.share-deco {
+  width: inherit;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+  margin: 12px 0;
+}
+
+legend.share-deco {
+
+  padding: 0 15px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+span.share-deco {
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  color: #757280;
+}
+
+input.share-deco {
+  width:100%;
+}
+
+
+div.extra-margin{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
