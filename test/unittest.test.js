@@ -102,7 +102,7 @@ describe('OverviewUIbuttons rendering', () => {
 describe('UIReviewButton rendering', () => {
   let wrapper = shallow( <UIReviewButton bizInfo={sampleBizData}/>);
 
-  it('should render UI buttons', () => {
+  it('should render UI buttons - Make Review', () => {
     expect(wrapper.exists('.modal')).toBe(true);
     expect(wrapper.exists('.modal-body')).toBe(true);
     expect(wrapper.exists('#overlay')).toBe(true);
@@ -115,4 +115,18 @@ describe('UIReviewButton rendering', () => {
 });
 
 
+// UIShareButton
+describe('UIShareButton rendering', () => {
+  let wrapper = shallow( <UIReviewButton bizInfo={sampleBizData}/>);
 
+  it('should render UI buttons - Share', () => {
+    expect(wrapper.exists('.modal')).toBe(true);
+    expect(wrapper.exists('.modal-body')).toBe(true);
+    expect(wrapper.exists('#overlay')).toBe(true);
+    expect(wrapper.exists('.title')).toBe(true);
+    expect(wrapper.exists('.close-button')).toBe(true);
+    expect(wrapper.exists('button')).toBe(true);
+    expect(wrapper.exists('textarea')).toBe(true);
+    expect(wrapper.exists('svg')).toBe(true);
+  });
+});
