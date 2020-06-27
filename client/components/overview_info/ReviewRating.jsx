@@ -33,7 +33,7 @@ class OverviewReview extends React.Component {
 
         <div className='review_detail'>
           <div className='review_detail_button'>
-            <button className='tertiary small button'  type='submit' value='submit' >
+            <button className='tertiary small button' type='submit' value='submit' >
               <span>
                 Details
               </span>

@@ -11,10 +11,10 @@ class OverviewServices extends React.Component {
   render() {
     const categories = this.props.bizServices;
     return (
-      <div className= 'service_types'>
+      <div key='category' className= 'service_types'>
         { categories ?
           categories.map((item, index) => (
-            <span className= 'service_type'>
+            <span key={'service_category_' + index} className= 'service_type'>
               <a className='biz_service'>
                 {item}
               </a>
