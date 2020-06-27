@@ -13,7 +13,7 @@ class UIShareButton extends React.Component {
   }
 
   componentDidMount () {
-    this.shareClicked();
+    // this.shareClicked();  // Testing Pupose code. Use it if you want to check.
   }
 
 
