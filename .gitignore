@@ -6,6 +6,7 @@ npm
 npm-debug.log
 node_modules/
 
+
 pids
 *.pid
 logs
@@ -24,4 +25,4 @@ coverage
 build/
 dist/
 public/
-
+sample_html/
