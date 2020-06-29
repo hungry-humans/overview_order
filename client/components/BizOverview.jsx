@@ -1,7 +1,7 @@
 
 const OverviewTitle = require('./BizTitle.jsx');
 import OverviewReview from './BizRating.jsx';
-const OverviewServices = require('./BizServices.jsx');
+import OverviewServices from './BizServices.jsx';
 const OverviewLastUpdated = require('./BizUpdated.jsx');
 
 class OverviewInfo extends React.Component {
