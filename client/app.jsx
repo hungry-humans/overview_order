@@ -1,11 +1,11 @@
 const React = require('react');
 const axios = require('axios');
-const OverviewTitle = require('./components/overview_info/Title.jsx');
-const OverviewReview = require('./components/overview_info/ReviewRating.jsx');
-const OverviewServices = require('./components/overview_info/TypeofServices.jsx');
-const OverviewLastUpdated = require('./components/overview_info/UpdateChecker.jsx');
+const OverviewTitle = require('./components/overview_info/BizTitle.jsx');
+const OverviewReview = require('./components/overview_info/BizRating.jsx');
+const OverviewServices = require('./components/overview_info/BizServices.jsx');
+const OverviewLastUpdated = require('./components/overview_info/BizUpdated.jsx');
 
-const OverviewUIbuttons = require('./components/overview_ui/UI_buttons.jsx');
+const OverviewUIbuttons = require('./components/overview_ui/UiButtons.jsx');
 const baseURL = 'http://localhost:3001';
 
 

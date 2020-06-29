@@ -1,12 +1,12 @@
 
-const OverviewTitle = require('../client/components/overview_info/Title.jsx');
-const OverviewReview = require('../client/components/overview_info/ReviewRating.jsx');
-const OverviewServices = require('../client/components/overview_info/TypeofServices.jsx');
-const OverviewLastUpdated = require('../client/components/overview_info/UpdateChecker.jsx');
+const OverviewTitle = require('../client/components/overview_info/BizTitle.jsx');
+const OverviewReview = require('../client/components/overview_info/BizRating.jsx');
+const OverviewServices = require('../client/components/overview_info/BizServices.jsx');
+const OverviewLastUpdated = require('../client/components/overview_info/BizUpdated.jsx');
 
-const OverviewUIbuttons = require('../client/components/overview_ui/UI_buttons.jsx');
-const UIReviewButton = require('../client/components/overview_ui/ui_reivewButton.jsx');
-const UIShareButton = require('../client/components/overview_ui/ui_shareButton.jsx');
+const OverviewUIbuttons = require('../client/components/overview_ui/UiButtons.jsx');
+const UIReviewButton = require('../client/components/overview_ui/UiReviewButton.jsx');
+const UIShareButton = require('../client/components/overview_ui/UiShareButton.jsx');
 
 
 const sampleBizData = {

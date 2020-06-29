@@ -1,5 +1,6 @@
 const React = require('react');
-
+var path = require("path");
+// const styles = require('../../styles/BizRating.css');
 
 class OverviewReview extends React.Component {
   constructor(props) {
@@ -18,6 +19,8 @@ class OverviewReview extends React.Component {
       pos: (digitN * -32) - ( decimalN > 0.5 ? 1 : 0)
     });
     // console.log(this.state.pos);
+
+    console.log('path = ' , path);
   }
 
   render() {

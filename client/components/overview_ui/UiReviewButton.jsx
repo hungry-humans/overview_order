@@ -113,7 +113,7 @@ class UIReviewButton extends React.Component {
         </div> */}
 
 
-        <div id="overlay" className={this.state.showOverlay}></div>
+        <div id="overlay" className={this.state.showOverlay} onClick={e => this.closeBtnClicked()}></div>
       </>
     );
   }

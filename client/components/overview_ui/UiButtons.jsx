@@ -1,7 +1,7 @@
 const React = require('react');
-const UIReviewButton = require('./ui_reivewButton.jsx');
-// import UIReviewButton from './ui_reivewButton.jsx';//client\components\overview_ui\ui_reivewButton.jsx
-const UIShareButton = require('./ui_shareButton.jsx');
+const UIReviewButton = require('./UiReviewButton.jsx');
+// import UIReviewButton from './UiReviewButton.jsx';//client\components\overview_ui\UiReviewButton.jsx
+const UIShareButton = require('./UiShareButton.jsx');
 class OverviewUIbuttons extends React.Component {
   constructor(props) {
     super(props);

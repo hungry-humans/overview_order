@@ -109,7 +109,7 @@ class UIShareButton extends React.Component {
         </div>
 
         {/* Overlay */}
-        <div id="overlay" className={this.state.showOverlay}></div>
+        <div id="overlay" className={this.state.showOverlay} onClick={e => this.closeBtnClicked()}></div>
 
       </>
     );

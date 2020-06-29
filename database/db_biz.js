@@ -10,7 +10,11 @@ const sequelize = new Sequelize('mydb', 'noobdev', 'post', {
 
 
 var biz = sequelize.define('business', {
-  'biz_id': Sequelize.TEXT,
+  'biz_id': {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
   'name': Sequelize.TEXT,
   'address': Sequelize.TEXT,
   'city': Sequelize.TEXT,
