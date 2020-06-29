@@ -4,9 +4,9 @@ const OverviewReview = require('../client/components/overview_info/BizRating.jsx
 const OverviewServices = require('../client/components/overview_info/BizServices.jsx');
 const OverviewLastUpdated = require('../client/components/overview_info/BizUpdated.jsx');
 
-const OverviewUIbuttons = require('../client/components/overview_ui/UiButtons.jsx');
-const UIReviewButton = require('../client/components/overview_ui/UiReviewButton.jsx');
-const UIShareButton = require('../client/components/overview_ui/UiShareButton.jsx');
+const OverviewUIbuttons = require('../client/components/UiButtons.jsx');
+const UIReviewButton = require('../client/components/UiReviewButton.jsx');
+const UIShareButton = require('../client/components/UiShareButton.jsx');
 
 
 const sampleBizData = {

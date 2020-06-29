@@ -79,7 +79,7 @@ div.review_stars_img{
   height: 32px;
   background-position: 0 -160px;
   /* I believe -160 for 3.5 star, -192 for 4 star */
-  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png);
+  background-image: url(https://hungry-humans-overview.s3.us-east-2.amazonaws.com/review_stars.png);
   background-size: 176px 680px;
   display: inline-block;
   overflow: hidden;

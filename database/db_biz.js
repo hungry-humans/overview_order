@@ -8,7 +8,6 @@ const sequelize = new Sequelize(User.db, User.username, User.password, {
 });
 
 
-
 var biz = sequelize.define('business', {
   'biz_id': {
     type: Sequelize.INTEGER,

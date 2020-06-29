@@ -1,71 +1,40 @@
 
 
-div.info_rating {
+.info_rating {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
   min-width: 100%;
-
   margin-left: -12px;
   margin-right: -12px;
   border-collapse: separate;
   border-spacing: 12px 0;
-
   margin-bottom: 8px!important;
-
   height: 32px;
 }
-/*
-span {
-  display: inline;
-} */
-
-
 
 /* Overview - Rating */
 
-div.review_stars{
+.review_stars{
   box-sizing: border-box;
   display: inline-flex;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-div.review_stars_img{
+.review_stars_img {
   width: 176px !important;
   height: 32px;
-  background-position: 0 -160px;
-  /* I believe -160 for 3.5 star, -192 for 4 star */
+  background-position: 0 -32px;
+
   background-image: url(https://hungry-humans-overview.s3.us-east-2.amazonaws.com/review_stars.png);
   background-size: 176px 680px;
   display: inline-block;
   overflow: hidden;
 }
-/*
-.review_stars {
-  width: 176px;
-  height: 32px;
-  height: 680px;
-  background-position: 0 -256px;
-  background: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png) no-repeat;
-  background-size: 176px 680px;
-  display: inline-block;
-  vertical-align: middle;
 
 
-
-  clip-path: inset(24% 0 72% 0);
-  position: absolute;
-} */
-
-span.review_stars {
-  display:inline;
-}
-
-
-div.review_counter.cell {
+.review_counter {
   border-collapse: collapse;
   border-spacing: 0;
 
@@ -75,8 +44,7 @@ div.review_counter.cell {
   width:fit-content;
 }
 
-
-p.review_counter {
+.review_counter p{
   text-align: left;
   font-size: 16px;
   line-height: 22px;
@@ -86,8 +54,9 @@ p.review_counter {
   color: #757280;
 }
 
-div.review_detail {
 
+
+.review_detail {
   box-sizing: border-box;
     display: table-cell;
     vertical-align: middle;
@@ -95,7 +64,7 @@ div.review_detail {
     border-spacing: 0;
 }
 
-div.review_detail_button {
+.review_detail_button {
   border-collapse: collapse;
   border-spacing: 0;
   display: inline-block;
@@ -116,25 +85,16 @@ div.review_detail_button {
     background-size: calc(var(--button-width, 100px) * 200) calc(var(--button-width, 100px) * 200);
 }
 
-.small {
+button.tertiary {
   padding: 0 8px;
     height: 24px;
-}
-
-.tertiary.button {
   display: inline-block;
     vertical-align: middle;
     margin: 0;
     cursor: pointer;
     text-align: center;
     user-select: none;
-
     border-radius: 4px;
-
-
-    /* --mousedown-x: 25px;
-    --mousedown-y: 20.1719px;
-    --button-width: 57.9375px; */
 }
 
 
@@ -147,16 +107,4 @@ span{
   /* height: inherit; */
 }
 
-.span_center{
-
-  display: inline-flex;
-  align-items : center;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-
-p{
-  text-align: left;
-}
 
