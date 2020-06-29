@@ -2,14 +2,8 @@
 const Sequelize = require('sequelize');
 let faker = require('faker');
 
-// Option 1: Passing parameters separately
-const sequelize = new Sequelize('mydb', 'noobdev', 'post', {
-  host: 'localhost',
-  dialect: 'postgres'
-});
 
-
-let biz = require('db_biz.js');
+let biz = require('./db_biz.js');
 
 let seedDB = (size = 100) => {
   let res = [];
