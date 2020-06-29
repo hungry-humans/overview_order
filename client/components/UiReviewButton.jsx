@@ -1,6 +1,5 @@
-// import React, { Component, useState } from 'react';
-const React = require('react');
-// const useState = React.useState;
+import React from 'react';
+import styles from '../styles/UIReviewButton.css';
 
 class UIReviewButton extends React.Component {
   constructor(props) {
@@ -13,7 +12,7 @@ class UIReviewButton extends React.Component {
 
   reviewClicked () {
     this.setState({
-      showWriteReview: 'active ',
+      showWriteReview: styles.modal_active,
       showOverlay: 'active'
     });
   }
@@ -25,14 +24,9 @@ class UIReviewButton extends React.Component {
     });
   }
 
-  clickEvent (type) {
-    if (type === 'guideline') {
-      this.setState({
-        showGuide: 'active'
-      });
-    }
+  svgReview () {
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" className={styles.icon_svg}><path d="M8.94 1l2.373 5.387 5.187.758-3.75 3.67.928 5.077-4.737 -2.907L4.367 16l.885-5.186-3.75-3.67 5.187-.757L8.94 1z"></path></svg>);
   }
-
 
   render() {
 
@@ -40,78 +34,70 @@ class UIReviewButton extends React.Component {
 
     return (
       <>
-        <div className="flex_content">
-          <button className="overview_a_button overview_write_review text_600 " onClick={e => this.reviewClicked()}>
+        <div className={styles.flex_content}>
+          <button className={`${styles.overview_review_button} ${styles.text_600}`} onClick={e => this.reviewClicked()}>
             <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" className="icon_svg"><path d="M8.94 1l2.373 5.387 5.187.758-3.75 3.67.928 5.077-4.737 -2.907L4.367 16l.885-5.186-3.75-3.67 5.187-.757L8.94 1z"></path></svg>
-                Write Review
+              {this.svgReview()}
+              Write Review
             </span>
           </button>
         </div>
 
         {/* Modal for making a review */}
 
-        <div className={ 'modal ' + this.state.showWriteReview }>
-          <div className="modal-header yelp">
-            <div className="title text_700">
+        <div className={`${styles.modal} ${this.state.showWriteReview}`}>
+          <div className={styles.modal_header_yelp}>
+            <div className={`${styles.title} ${styles.text_700}`}>
               Write a Review
             </div>
-            <button className="close-button" onClick={e => this.closeBtnClicked()}> &times; </button>
+            <button className={styles.close_button} onClick={e => this.closeBtnClicked()}> &times; </button>
           </div>
-          <div className="modal-body">
+          <div className={styles.modal_body}>
 
-            <div className='flex_box stack'>
-              <div className="flex_content review-header">
-                <div className='review-title text_600'> {this.props.bizInfo.name} </div>
-                <div onClick={e=>this.clickEvent('guideline')}> Read our review guidelines</div>
+            <div className={styles.flex_stack}>
+              <div className={styles.review_header}>
+                <div className={`${styles.title} ${styles.text_600}`}> {this.props.bizInfo.name} </div>
+                <div> Read our review guidelines</div>
               </div>
 
-              <div className='flex_box stack review-content'>
-                <div className="review-status flex_content">
+              <div className={styles.review_content}>
+                <div className={styles.review_status}>
                   <div id="Review Star Selector" >
                     [Review Star Selector] Select your rating
                   </div>
-                  <div className='review-status-autosave'> All changes saved </div>
+                  <div className={styles.review_status_autosave}> All changes saved </div>
                 </div>
-                <textarea className='textarea-simple clean text_400' placeholder={textareaPlaceholder}>
+                <textarea className={styles.review_text} placeholder={textareaPlaceholder}>
 
                 </textarea>
 
               </div>
 
 
-              <div className="flex_content review-header-photo">
-                <div className='review-title text_600'> Attach Photos </div>
+              <div className={styles.review_header_photo}>
+                <div className={`${styles.title} ${styles.text_600}`}> Attach Photos </div>
                 <div> optional </div>
               </div>
 
 
-              <div className='flex_box stack review-content-photo'>
-                <div id="photoUploader" className="flex_content">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="icon_svg"><path d="M19 20H5a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h2.184A2.99 2.99 0 0 1 10 4h4a2.99 2.99 0 0 1 2.816 2H19a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3zM12.005 8.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zM13 14v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2h-1z"></path></svg>
-                  Upload
+              <div className={styles.review_content_photo}>
+                <div id="photoUploader" className={styles.flex_content}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className={styles.icon_svg}><path d="M19 20H5a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h2.184A2.99 2.99 0 0 1 10 4h4a2.99 2.99 0 0 1 2.816 2H19a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3zM12.005 8.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zM13 14v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2h-1z"></path></svg>
                 </div>
-
-
+                <span>Upload</span>
               </div>
             </div>
 
 
           </div>
-          <div className="modal-footer">
+          <div id="modal_footer">
 
-            <button className="overview_write_review reivew-post-button text_600">
+            <button className={styles.review_post_button}>
               Post Reivew
             </button>
 
           </div>
         </div>
-
-        {/*
-        <div className={'modal ' + this.state.show }>
-
-        </div> */}
-
 
         <div id="overlay" className={this.state.showOverlay} onClick={e => this.closeBtnClicked()}></div>
       </>
@@ -120,8 +106,15 @@ class UIReviewButton extends React.Component {
 }
 
 
-module.exports = UIReviewButton;
-// export default UIReviewButton;
+export default UIReviewButton;
 
 
 
+//Extra - planning to add another modal in Guidelines
+// clickEvent (type) {
+//   if (type === 'guideline') {
+//     this.setState({
+//       showGuide: 'active'
+//     });
+//   }
+// }

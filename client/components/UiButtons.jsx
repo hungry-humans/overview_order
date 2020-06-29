@@ -1,5 +1,5 @@
 import React from 'react';
-const UIReviewButton = require('./UiReviewButton.jsx');
+import UIReviewButton from './UiReviewButton.jsx';
 // import UIReviewButton from './UiReviewButton.jsx';//client\components\overview_ui\UiReviewButton.jsx
 import UIShareButton from './UiShareButton.jsx';
 
