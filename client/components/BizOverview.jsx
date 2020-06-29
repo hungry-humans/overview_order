@@ -1,5 +1,5 @@
 
-const OverviewTitle = require('./BizTitle.jsx');
+import OverviewTitle from './BizTitle.jsx';
 import OverviewReview from './BizRating.jsx';
 import OverviewServices from './BizServices.jsx';
 const OverviewLastUpdated = require('./BizUpdated.jsx');
