@@ -13,7 +13,7 @@ class UIReviewButton extends React.Component {
   reviewClicked () {
     this.setState({
       showWriteReview: styles.modal_active,
-      showOverlay: 'active'
+      showOverlay: styles.overlay_active
     });
   }
 
@@ -99,7 +99,7 @@ class UIReviewButton extends React.Component {
           </div>
         </div>
 
-        <div id="overlay" className={this.state.showOverlay} onClick={e => this.closeBtnClicked()}></div>
+        <div id="overlay" className={`${styles.overlay} ${this.state.showOverlay}`} onClick={e => this.closeBtnClicked()}></div>
       </>
     );
   }
