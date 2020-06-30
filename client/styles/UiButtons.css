@@ -1,0 +1,141 @@
+
+
+.flex_box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex_content.full{
+  width: 100%;
+}
+
+.flex_box.full{
+  width: 100%;
+}
+
+
+.flex_box .stack{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex_content{
+  display: inline-flex;
+  color: inherit;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+
+.button_content {
+  composes: flex_content;
+  padding: 0 8px;
+}
+
+.icon_svg{
+  fill: inherit;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+.overview_ui_button {
+  height: 40px;
+}
+
+.overview_a_button{
+  border-color: #eeeeef;
+  text-decoration: none!important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 16px;
+  height: 40px;
+  /* height:auto; */
+  border-radius: 4px;
+  vertical-align: middle;
+
+  color: #2b273c;
+  background: transparent;
+  border: 1px solid #bbbac0;
+  background-image: none;
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+  transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+  background-position: calc(var(--mousedown-x) - calc(var(--button-width, 100px) * 200)/2) calc(var(--mousedown-y) - calc(var(--button-width, 100px) * 200)/2);
+  background-size: calc(var(--button-width, 100px) * 200) calc(var(--button-width, 100px) * 200);
+}
+
+
+.overview_write_review{
+  color: #fff;
+  background: #f43939 !important;
+  border: 1px solid #f43939;
+  background-image: none;
+  background-repeat: no-repeat;
+  transition: all .8s;
+  transition-property: background-image,background-color,background-position,background-size,border-color,box-shadow;
+  background-position: calc(var(--mousedown-x) - calc(var(--button-width, 100px) * 200)/2) calc(var(--mousedown-y) - calc(var(--button-width, 100px) * 200)/2);
+  background-size: calc(var(--button-width, 100px) * 200) calc(var(--button-width, 100px) * 200);
+  border-color: #eeeeef;
+}
+
+.overview_ui_span{
+  max-width: 100%;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  white-space: nowrap!important;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color:inherit;
+  fill: currentColor;
+}
+
+.overview_div_uiitem{
+  display: block;
+   text-align: center;
+   background: #383838;
+}
+
+
+
+
+.text_400{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+
+.text_700{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: height;
+}
+
+
+.text_600{
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: height;
+}

@@ -1,16 +1,19 @@
 /* eslint-disable camelcase */
 const Sequelize = require('sequelize');
-let faker = require('faker');
+const User = require('./config.js');
 
-// Option 1: Passing parameters separately
-const sequelize = new Sequelize('mydb', 'noobdev', 'post', {
+const sequelize = new Sequelize(User.db, User.username, User.password, {
   host: 'localhost',
   dialect: 'postgres'
 });
 
 
 var biz = sequelize.define('business', {
-  'biz_id': Sequelize.TEXT,
+  'biz_id': {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
   'name': Sequelize.TEXT,
   'address': Sequelize.TEXT,
   'city': Sequelize.TEXT,
