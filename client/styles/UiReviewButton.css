@@ -27,6 +27,14 @@
   vertical-align: middle;
 }
 
+
+.button_content {
+  composes: flex_content;
+  padding-right: 8px;
+}
+
+
+
 .last_update_biz{
   margin-top: 4px!important;
   color: #0ab3c9;

@@ -5,8 +5,7 @@
   flex-direction: row;
   align-items: center;
   min-width: 100%;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin: 0px;
   border-collapse: separate;
   border-spacing: 12px 0;
   margin-bottom: 8px!important;
@@ -18,6 +17,7 @@
 .review_stars{
   box-sizing: border-box;
   display: inline-flex;
+  margin: 0px;
   border-collapse: collapse;
   border-spacing: 0;
 }

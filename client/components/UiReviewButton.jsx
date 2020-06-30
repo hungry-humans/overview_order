@@ -34,7 +34,7 @@ class UIReviewButton extends React.Component {
 
     return (
       <>
-        <div className={styles.flex_content}>
+        <div className={styles.button_content}>
           <button className={`${styles.overview_review_button} ${styles.text_600}`} onClick={e => this.reviewClicked()}>
             <span>
               {this.svgReview()}

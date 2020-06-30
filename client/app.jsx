@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import styles from './styles/App.css';
 
 import OverviewInfo from './components/BizOverview.jsx';
 import OverviewUIbuttons from './components/UiButtons.jsx';
@@ -32,7 +33,7 @@ class App extends React.Component {
     } else {
       const bizInfo = this.state.bizInfo;
       return (
-        <div id='overview' className='info_container'>
+        <div id='overview' className={styles.info_container}>
           <OverviewInfo bizInfo={bizInfo} />
           <OverviewUIbuttons bizInfo={bizInfo} />
         </div>

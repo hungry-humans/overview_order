@@ -30,6 +30,13 @@
 }
 
 
+
+.button_content {
+  composes: flex_content;
+  padding: 0 8px;
+}
+
+
 .last_update_biz{
   margin-top: 4px!important;
   color: #0ab3c9;
@@ -268,18 +275,28 @@
   height: 40px;
   justify-content: center;
   align-items : center;
+  cursor: pointer;
 }
 
 .share_button_facebook_style {
   composes: share_button;
   background: #1877f2;
+  opacity: 1;
+}
+
+.share_button_facebook_style:hover {
+  opacity: 0.9;
 }
 
 .share_button_twitter_style {
   composes: share_button;
   background: #50abf1;
+  opacity: 1;
 }
 
+.share_button_twitter_style:hover {
+  opacity: 0.9;
+}
 
 .fieldset_deco {
   width: inherit;

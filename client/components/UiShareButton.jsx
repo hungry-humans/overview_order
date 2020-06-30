@@ -34,7 +34,7 @@ class UIShareButton extends React.Component {
   render() {
     return (
       <>
-        <div className={styles.flex_content}>
+        <div className={styles.button_content}>
           <button className={styles.overview_a_button} onClick={e=>this.shareClicked()}>
             <span className={`${styles.overview_ui_span} ${styles.text_600}`}>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" className={styles.icon_svg}><path d="M17.714 6.43L13 10.356v-3.03c-1 0-5.097 1.47-6.286 3.62.274-3.08 4.286-5.5 6.286-5.5V2.5l4.714 3.93zM3 4v10h11v-2.5l1-1V15H2V3h8.5l-1 1H3z"></path></svg>

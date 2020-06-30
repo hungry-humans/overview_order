@@ -28,6 +28,12 @@
   vertical-align: middle;
 }
 
+
+.button_content {
+  composes: flex_content;
+  padding: 0 8px;
+}
+
 .icon_svg{
   fill: inherit;
   display: block;
