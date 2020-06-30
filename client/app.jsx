@@ -1,20 +1,28 @@
-import React from 'react';
-import axios from 'axios';
-import styles from './styles/App.css';
+const React = require('react');
+const axios = require('axios');
 
-import OverviewInfo from './components/BizOverview.jsx';
-import OverviewUIbuttons from './components/UiButtons.jsx';
+const OverviewTitle = require('./components/Title.jsx');
+const OverviewReview = require('./components/ReviewRating.jsx');
+const OverviewServices = require('./components/TypeofServices.jsx');
+const OverviewLastUpdated = require('./components/UpdateChecker.jsx');
 
-// import url from '../server/config.js';
+const OverviewUIbuttons = require('./components/UI_buttons.jsx');
+
 const baseURL = 'http://localhost:3001';
+
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { };
+    this.state = {
+      bizInfo: {},
+      loadComplete: false
+    };
+    // this.getBizInfo = this.getBizInfo.bind(this);
   }
 
   componentDidMount() {
+    // this.getBizInfo.call(this);
     this.getBizInfo();
   }
 
@@ -29,13 +37,19 @@ class App extends React.Component {
 
   render() {
     if (!this.state.loadComplete) {
+      console.log('loading');
       return ( <div> {"Loading"} </div> );
     } else {
-      const bizInfo = this.state.bizInfo;
       return (
-        <div id='overview' className={styles.info_container}>
-          <OverviewInfo bizInfo={bizInfo} />
-          <OverviewUIbuttons bizInfo={bizInfo} />
+        <div id='overview' class='info_container'>
+          <div id='overview_biz' class= 'margin_bottom_24px'>
+            <OverviewTitle bizTitle={this.state.bizInfo.name} />
+            <OverviewReview bizRate={this.state.bizInfo.stars} bizReviewCount={this.state.bizInfo.review_count} />
+            <OverviewServices bizServices={this.state.bizInfo.categories} />
+            <OverviewLastUpdated updatedAt={this.state.bizInfo.updatedAt} />
+          </div>
+          <OverviewUIbuttons />
+          {/* {this.state.bizInfo.name} */}
         </div>
       );
     }

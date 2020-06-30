@@ -79,7 +79,7 @@ div.review_stars_img{
   height: 32px;
   background-position: 0 -160px;
   /* I believe -160 for 3.5 star, -192 for 4 star */
-  background-image: url(https://hungry-humans-overview.s3.us-east-2.amazonaws.com/review_stars.png);
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/stars_v2.yelp_design_web.yji-52d3d7a328db670d4402843cbddeed89.png);
   background-size: 176px 680px;
   display: inline-block;
   overflow: hidden;
@@ -185,7 +185,7 @@ span{
   align-items : center;
   justify-content: center;
   /* vertical-align: middle; */
-  /* height: inherit; */
+  height: inherit;
 }
 
 .span_center{
@@ -249,21 +249,6 @@ span.service_type{
   align-items: center;
 }
 
-.flex_content.full{
-  width: 100%;
-}
-
-.flex_box.full{
-  width: 100%;
-}
-
-
-.flex_box .stack{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .flex_content{
   display: inline-flex;
   color: inherit;
@@ -313,24 +298,6 @@ span.service_type{
   line-height: 22px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.text_700{
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: height;
-}
 
 
 .text_600{
@@ -383,7 +350,7 @@ div.overview_ui_button {
 
 .overview_write_review{
   color: #fff;
-  background: #f43939 !important;
+  background: #f43939;
   border: 1px solid #f43939;
   background-image: none;
   background-repeat: no-repeat;
@@ -418,261 +385,3 @@ div.overview_ui_button {
 
 }
 
-.overview_a_button:hover {
-  background-color: #c9c9c9;;
-}
-
-
-
-.modal {
-  box-sizing: border-box;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 10px;
-  z-index: 10;
-  background-color: white;
-  width: 70%;
-  min-width: 300px;
-  max-width: 625px;
-  height: 700px;
-  /* height: 70%; */
-  /* min-height: 800px; */
-}
-
-.modal.active {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header {
-  padding: 10px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: inherit;
-  margin: 15px;
-
-  background-color: white;
-  color: black;
-}
-
-
-.modal-header.yelp {
-  background-color: #d32323 !important;
-  color: white;
-}
-
-
-.modal-header .title{
-  margin-left: 10px;
-  font-size: 1.35 rem;
-  font-weight: bold;
-
-}
-
-.modal-header .close-button {
-  margin-right: 10px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color:inherit;
-}
-
-.modal-body {
-  padding:10px 15px;
-}
-
-
-#overlay {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0, .5);
-  pointer-events: none;
-}
-
-#overlay.active{
-  opacity: 1;
-  pointer-events: all;
-}
-
-
-
-.review-header{
-  justify-content: space-between;
-  align-items: center;
-  width:100%;
-  margin-bottom: 10px;
-  color: #0073bb;
-}
-
-
-.review-status {
-  justify-content: space-between;
-  align-items: center;
-  width:90%;
-  margin: 20px;
-  color: gray;
-}
-
-.review-status-autosave{
-  opacity: 0;
-}
-
-.review-content {
-  border: 1px solid gray;
-  border-radius: 5px;
-  /* height: 70%; */
-  min-height: 300px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-
-.textarea-simple {
-  /* height: 400px; */
-  width: 90%;
-  height: 150px;
-  outline: none;
-  resize: none;
-  overflow: hidden;
-  box-sizing: border-box
-}
-
-textarea.clean {
-  border: none;
-}
-
-textarea.share-deco {
-  width: 100%;
-  border-width: 1px
-}
-
-textarea.oneline {
-
-}
-
-
-.review-header-photo{
-  justify-content:start;
-  align-items: center;
-  width:100%;
-  margin-bottom: 10px;
-}
-
-
-.review-content-photo {
-  border: 1px solid gray;
-  border-radius: 5px;
-  /* height: 70%; */
-  height: 100px;
-  width: 100%;
-  margin-bottom: 20px 10px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.review-content-photo:hover{
-  box-shadow: 0 0 5px gray;
-}
-
-.reivew-post-button{
-  margin: 10px 20px;
-  width: 240px;
-  height: 48px;
-  cursor: pointer;
-  transition: 200ms ease-in-out;
-}
-
-.reivew-post-button:hover{
-  opacity: 0.9;
-}
-
-
-
-
-
-
-
-
-
-
-.share-button {
-  width: 100%;
-  box-sizing: border-box;
-  color: #fff;
-  border: none;
-  background-image: none;
-  text-overflow: ellipsis!important;
-  white-space: nowrap;
-  margin: 5px;
-  border-radius: 5px;
-  height: 40px;
-  justify-content: center;
-  align-items : center;
-}
-
-.share-button.facebook-style {
-  background: #1877f2;
-}
-
-.share-button.twitter-style {
-  background: #50abf1;
-}
-
-
-fieldset.share-deco {
-  width: inherit;
-  border: none;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid transparent;
-  text-align: center;
-  margin: 12px 0;
-}
-
-legend.share-deco {
-
-  padding: 0 15px;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-span.share-deco {
-  font: inherit;
-  vertical-align: baseline;
-  text-align: left;
-  color: #757280;
-}
-
-input.share-deco {
-  width:100%;
-  border-width: 1px;
-  height: 30px;
-}
-
-
-input.clean {
-  border: none;
-}
-
-div.extra-margin{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.border {
-  box-sizing: border-box;
-  overflow: hidden;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-}

@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../styles/BizServices.css';
+const React = require('react');
+
 
 class OverviewServices extends React.Component {
   constructor(props) {
@@ -11,23 +11,23 @@ class OverviewServices extends React.Component {
   render() {
     const categories = this.props.bizServices;
     return (
-      <div key='category' className={styles.service_types}>
+      <div class = 'service_types'>
         { categories ?
           categories.map((item, index) => (
-            <span key={'service_category_' + index} className= {styles.service_type}>
-              <a className={styles.biz_service}>
+            <span class = 'service_type'>
+              <a class='biz_service'>
                 {item}
               </a>
               { index < categories.length - 1 ? ',' : '' }
             </span>
           ))
           :
-          <span className = {styles.service_type}>
+          <span class = 'service_type'>
             None
           </span>
         }
 
-        <a href='/' className={styles.biz_service_edit}>
+        <a href='/' class='biz_service edit' target name rel>
           Edit
         </a>
       </div>
@@ -36,4 +36,4 @@ class OverviewServices extends React.Component {
 }
 
 
-export default OverviewServices;
+module.exports = OverviewServices;
