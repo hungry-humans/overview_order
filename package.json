@@ -4,16 +4,15 @@
   "description": "",
   "author": "Joon Park",
   "license": "0",
-  "engines": {
-    "node": ">=6.13.0"
-  },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
     "dbSetup": "node ./database/seed.js",
     "react-dev": "webpack -d --watch",
-    "server-dev": "node ./server/server.js"
+    "server-dev": "node ./server/server.js",
+    "start": "nodemon ./server/server.js",
+    "compile": "webpack -d"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -25,7 +24,9 @@
     "pg-hstore": "^2.3.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "sequelize": "^5.21.13"
+    "sequelize": "^5.21.13",
+    "faker": "^4.1.0",
+    "nodemon": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
@@ -42,7 +43,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.2",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "faker": "^4.1.0",
+    "grunt": "^1.1.0",
     "jest": "^26.0.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",

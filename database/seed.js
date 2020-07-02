@@ -5,7 +5,7 @@ let faker = require('faker');
 
 let biz = require('./db_biz.js');
 
-let seedDB = (size = 100) => {
+let seedDB = (size = 10) => {
   let res = [];
 
   for ( let i = 0; i < size; i++) {
@@ -40,6 +40,9 @@ let seedDB = (size = 100) => {
 biz.sync({force: true})
   .then(()=> {
     biz.bulkCreate(seedDB());
+  })
+  .catch((e) => {
+    console.log('error! : ', e);
   })
   .finally(() => {
     console.log('seeding completed');

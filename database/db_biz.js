@@ -3,8 +3,9 @@ const Sequelize = require('sequelize');
 const User = require('./config.js');
 
 const sequelize = new Sequelize(User.db, User.username, User.password, {
-  host: 'localhost',
-  dialect: 'postgres'
+  host: 'database',
+  dialect: 'postgres',
+  logging: false
 });
 
 

@@ -4,6 +4,7 @@
 // const User = {
 //   db: db name,
 //   username: user name,
-//   password: password
+//   password: password,
+//   location: 'localhost'
 // };
 // module.exports = User;
