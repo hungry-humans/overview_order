@@ -35,5 +35,8 @@ module.exports = {
   },
   watchOptions: {
     poll: true
+  },
+  optimization: {
+    concatenateModules: true
   }
 };

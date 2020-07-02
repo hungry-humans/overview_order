@@ -12,7 +12,8 @@
     "react-dev": "webpack -d --watch",
     "server-dev": "node ./server/server.js",
     "start": "nodemon ./server/server.js",
-    "compile": "webpack -d"
+    "compile": "webpack -d",
+    "compile-production": "webpack -p --mode=production"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -44,6 +45,7 @@
     "eslint-plugin-react": "^7.20.2",
     "eslint-plugin-react-hooks": "^4.0.0",
     "grunt": "^1.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "jest": "^26.0.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
